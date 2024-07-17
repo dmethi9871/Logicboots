@@ -1,5 +1,5 @@
 import Link from "next/link";
-import image from "public/images/hero/Untitled design (21).png"
+import image from "public/images/hero/Untitled design (52).png"
 import image1 from "public/images/hero/Untitled design (18).png"
 const Hero = () => {
   return (
@@ -201,7 +201,7 @@ const Hero = () => {
           </div>
           <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
             <div className="w-full h-full">
-<img src={image.src} alt="Descriptive text about the image" className="w-full h-full object-cover" />
+<img src={image.src} alt="Descriptive text about the image" className="w-full h-554px object-cover" />
                 
             </div>
           </div>
