@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Page | Leading-edge AI powered technology! LogicBoots",
+  title: "Blog Page | Where machines learn, adapt, and evolve! LogicBoots",
   description: "This is Blog Page of LogicBoots",
   // other metadata
 };

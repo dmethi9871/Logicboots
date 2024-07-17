@@ -4,21 +4,22 @@ import image1 from "public/images/hero/Untitled design (18).png"
 const Hero = () => {
   return (
     <>
+    <div className="h-screen">
       <section
         id="home"
         className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
+            <div className="w-full  px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-3xl sm:leading-tight md:text-5xl md:leading-tight">
-                Logicboots: Rapid, Reliable, and Revolutionizing the Future of Robots.
+                <h1 className="mb-5 text-4xl font-bold leading-tight text-black dark:text-white sm:text-3xl sm:leading-tight md:text-5xl md:leading-tight">
+                Building Intelligent machines, enriching human  lives
                 </h1>
                 <p className="mb-2 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Leading-edge  AI powered technology !
+                Where machines learn, adapt, and evolve
                 </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <div className="flex flex-col mb-12 items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   
                   <Link
                     href="/contact"
@@ -48,6 +49,7 @@ const Hero = () => {
 </div>
 
       </section>
+      </div>
     </>
   );
 };

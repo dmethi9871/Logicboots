@@ -4,7 +4,7 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Page | Leading-edge AI powered technology! LogicBoots",
+  title: "Contact Page | Where machines learn, adapt, and evolve! LogicBoots",
   description: "This is Contact Page of LogicBoots",
   // other metadata
 };

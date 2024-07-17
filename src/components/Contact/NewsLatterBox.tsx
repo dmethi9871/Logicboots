@@ -1,9 +1,41 @@
 "use client";
 
 import { useTheme } from "next-themes";
+import React from "react";
+import { useRouter } from "next/navigation";
+import { Metadata } from "next";
+import axios from "axios";
+import Notiflix from 'notiflix';
 
 const NewsLatterBox = () => {
   const { theme } = useTheme();
+  const router = useRouter();
+  const [loading, setLoading] = React.useState(false);
+  const [user, setUser] = React.useState({
+    Name: "",
+    email: "",
+  
+  })
+  const handleSubmit = async () => {
+    
+    try {
+      setLoading(true);
+      const response = await axios.post("/api/Subscribe", user);
+      console.log("Response from server:", response.data);
+
+      if (response.data && response.data.success) {
+        router.push("/");
+        Notiflix.Notify.success('Subscribed successfully!');
+      } else {
+        Notiflix.Notify.failure('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      Notiflix.Notify.failure('Message sending failed. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <div className="relative z-10 rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11">
@@ -11,7 +43,7 @@ const NewsLatterBox = () => {
         Subscribe to receive future updates
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-      Discover the future of home innovation with Logicboots! Stay ahead of the curve 
+      Discover the future of Intelligent machines, enriching human lives with Logicboots! Stay ahead of the curve 
       by subscribing to our email updates. Join our community of forward-thinkers and receive exclusive access to product launches, special offers, and insightful tips for a smarter home.
 
       </p>
@@ -19,18 +51,23 @@ const NewsLatterBox = () => {
         <input
           type="text"
           name="name"
+          value={user.Name}
+          onChange={(e) => setUser({ ...user, Name: e.target.value })}
           placeholder="Enter your name"
           className="border-stroke mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
         />
         <input
           type="email"
           name="email"
+          value={user.email}
+          onChange={(e) => setUser({ ...user, email: e.target.value })}
           placeholder="Enter your email"
           className="border-stroke mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
         />
         <input
           type="submit"
           value="Subscribe"
+          onClick={handleSubmit}
           className="mb-5 flex w-full cursor-pointer items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
         />
         <p className="text-center text-base leading-relaxed text-body-color dark:text-body-color-dark">

@@ -1,8 +1,36 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-
+import React from "react";
+import { useRouter } from "next/navigation";
+import axios from "axios";
+import Notiflix from 'notiflix';
 const Footer = () => {
+  const router = useRouter();
+  const [loading, setLoading] = React.useState(false);
+  const [email, setEmail] = React.useState("");
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    try {
+      setLoading(true);
+      const response = await axios.post("/api/Subscribe", { email });
+
+      console.log("Response from server:", response.data);
+
+      if (response.data && response.data.success) {
+        router.push("/");
+        Notiflix.Notify.success('Subscribed successfully!');
+      } else {
+        Notiflix.Notify.failure('Failed to subscribe. Please try again.');
+      }
+    } catch (error) {
+      console.error("Error subscribing:", error);
+      Notiflix.Notify.failure('Subscription failed. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <>
       <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
@@ -140,12 +168,12 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link
+                    {/* <Link
                       href="/signup"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Sign Up
-                    </Link>
+                    </Link> */}
                   </li>
                 </ul>
               </div>
@@ -186,14 +214,17 @@ const Footer = () => {
                 <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
                   Subscribe Newsletter
                 </h2>
-                <form className="mb-6">
+                <form onSubmit={handleSubmit} className="mb-6">
                   <input
                     type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     placeholder="Your email"
                     className="w-full py-2 px-4 mb-4 text-base leading-relaxed bg-gray-200 dark:bg-gray-800 text-body-color dark:text-body-color-dark border-2 border-gray-200 dark:border-gray-700 focus:outline-none focus:border-primary dark:focus:border-primary"
                   />
-                  <button className="w-full py-2 px-6 bg-primary text-white text-base leading-relaxed font-bold uppercase duration-300 hover:bg-primary-dark focus:outline-none focus:bg-primary-dark">
-                    Subscribe
+
+                  <button type="submit" className="w-full py-2 px-6 bg-primary text-white text-base leading-relaxed font-bold uppercase duration-300 hover:bg-primary-dark focus:outline-none focus:bg-primary-dark" disabled={loading}>
+                    {loading ? "Subscribing..." : "Subscribe"}
                   </button>
                 </form>
                 <p className="text-sm text-body-color dark:text-body-color-dark">

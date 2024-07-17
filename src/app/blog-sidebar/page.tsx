@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Details Page | Leading-edge AI powered technology! LogicBoots",
+  title: "Blog Details Page | Where machines learn, adapt, and evolve! LogicBoots",
   description: "This is Blog Details Page of LogicBoots",
   // other metadata
 };
