@@ -116,7 +116,7 @@ const BlogDetailsPage = () => {
                     </div>
                   </div>
                   <p className="mb-8 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    In today's rapidly advancing healthcare landscape, innovation plays a crucial role in enhancing patient outcomes and revolutionizing medical practices. The integration of AI-powered technologies, such as the stethoscope with remote monitoring capabilities, signifies a shift towards more efficient and accurate patient care
+                    In today&apos;s rapidly advancing healthcare landscape, innovation plays a crucial role in enhancing patient outcomes and revolutionizing medical practices. The integration of AI-powered technologies, such as the stethoscope with remote monitoring capabilities, signifies a shift towards more efficient and accurate patient care
                     <strong className="text-primary dark:text-white">
                       . By embracing innovation, healthcare professionals
                     </strong>
@@ -151,7 +151,7 @@ const BlogDetailsPage = () => {
                   <div className="mb-10 text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Remote monitoring technology integrated into AI-powered stethoscopes offers a multitude of benefits in the healthcare landscape:
                     <ol className="list-decimal list-inside mt-4">
-                      <li>Ability to track patients' health data continuously, allowing for early detection of concerning trends or fluctuations.</li>
+                      <li>Ability to track patients&apos; health data continuously, allowing for early detection of concerning trends or fluctuations.</li>
                       <li>Proactive approach enables healthcare providers to intervene promptly, potentially preventing complications or emergencies.</li>
                       <li>Promotes patient empowerment and engagement by providing real-time access to health information.</li>
                       <li>Patients can actively participate in their care plan and contribute to better health outcomes.</li>
