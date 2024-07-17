@@ -1,5 +1,5 @@
 import Link from "next/link";
-import image from "public/images/hero/Untitled design (52).png"
+import image from "public/images/hero/Untitled design (21).png"
 import image1 from "public/images/hero/Untitled design (18).png"
 const Hero = () => {
   return (
