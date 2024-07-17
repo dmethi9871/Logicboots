@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="h-screen relative overflow-hidden">
         <section
           id="home"
-          className="relative z-10 bg-white pb-8 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+          className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
         >
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-[800px] text-center">
@@ -200,8 +200,8 @@ const Hero = () => {
             </svg>
           </div>
           <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
-            <div className="w-full h-full">
-<img src={image.src} alt="Descriptive text about the image" className="w-full h-554px object-cover" />
+            <div className="w-456px h-full">
+<img src={image.src} alt="Descriptive text about the image" className="w-full h-full object-cover" />
                 
             </div>
           </div>
