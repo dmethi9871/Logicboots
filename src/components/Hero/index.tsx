@@ -7,12 +7,12 @@ const Hero = () => {
       <div className="h-screen relative overflow-hidden">
         <section
           id="home"
-          className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+          className="relative z-10 h-screen overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[180px] md:pt-[180px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
         >
           <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-[800px] text-center">
-              <h1 className="mb-5 text-4xl md:text-5xl font-bold leading-tight text-black dark:text-white">
-                Building Intelligent machines, enriching human lives
+            <div className="mx-auto max-w-[650px] text-center">
+              <h1 className="mb-5 mt-10 text-4xl md:text-4xl font-bold leading-tight text-black dark:text-white">
+                Building Intelligent Machines, Enriching Human Lives
               </h1>
               <p className="mb-4 text-base md:text-lg text-body-color dark:text-body-color-dark">
                 Where machines learn, adapt, and evolve

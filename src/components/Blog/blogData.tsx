@@ -5,7 +5,7 @@ const blogData: Blog[] = [
     id: 1,
     title: "AI-Powered Robotic Vacuum Cleaners",
     paragraph:
-      "Welcome to the future of hygiene with Logicboots. Our robotic vacuums are meticulously engineered to deliver outstanding performance, effortlessly keeping your living space spotless with minimal effort.",
+      "Welcome to the future of hygiene with Logicboots. Our robotic vacuums deliver outstanding performance, effortlessly keeping your living space spotless with minimal effort.",
     image: "/images/blog/blog-01.jpg",
     link: "/blog-details",
     tags: ["Vacuum Cleaner"],

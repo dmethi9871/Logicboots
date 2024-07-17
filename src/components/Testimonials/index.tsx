@@ -10,16 +10,14 @@ const testimonialData: Testimonial[] = [
     content:
       "Our founder believes AI-powered robots revolutionize industries by enhancing efficiency and precision. More than tools, they are partners augmenting human capabilities and driving innovation. By emphasizing ethical AI development, we ensure these advancements benefit society and foster a better future for all.",
     image: "/images/testimonials/auth-01.png",
-
   },
   {
     id: 2,
     name: "Swarna Singh",
     designation: "Co Founder @Logicboots",
     content:
-      "Our cofounder envisions AI-powered robots as transformative agents in various sectors, streamlining processes and improving outcomes. Their commitment to ethical AI emphasizes responsible development, ensuring these technologies empower individuals and drive progress",
+      "Our cofounder envisions AI-powered robots as transformative agents in various sectors, streamlining processes and improving outcomes. Their steadfast commitment to ethical AI emphasizes responsible development, ensuring these transformative technologies empower individuals and drive progress.",
     image: "/images/testimonials/auth-02.png",
-
   },
   {
     id: 3,
@@ -28,7 +26,6 @@ const testimonialData: Testimonial[] = [
     content:
       "Our mentor believes that AI advancements will positively impact society, fostering a future where humans and robots collaboratively thrive. Through responsible innovation, they aim to create a world where technology and humanity coexist harmoniously, driving continuous improvement and opportunity.",
     image: "/images/testimonials/auth-03.png",
-
   },
 ];
 
@@ -42,14 +39,13 @@ const Testimonials = () => {
           center
         />
 
-
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1  gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-3">
           {testimonialData.map((testimonial) => (
             <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
           ))}
         </div>
       </div>
-      <div className="absolute right-0 top-5 z-[-1]">
+      <div className="absolute right-0 top-5 z-[-1] hidden md:block">
         <svg
           width="238"
           height="531"
@@ -103,7 +99,7 @@ const Testimonials = () => {
           </defs>
         </svg>
       </div>
-      <div className="absolute bottom-5 left-0 z-[-1]">
+      <div className="absolute bottom-5 left-0 z-[-1] hidden md:block">
         <svg
           width="279"
           height="106"

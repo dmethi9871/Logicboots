@@ -5,11 +5,11 @@ import SectionTitle from "../Common/SectionTitle";
 
 const Brands = () => {
   return (
-    <section className="pt-16">
+    <section className="pt-18">
     <SectionTitle
-          title="We are ready to help"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
-          center  
+          title="Incubated & Supported By"
+          paragraph="We are dedicated to supporting and nurturing innovative ideas to fruition, despite the variations that may arise in the process."
+          center
           mb="10px"
         />
       <div className="container">

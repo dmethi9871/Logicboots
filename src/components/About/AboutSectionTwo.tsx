@@ -1,5 +1,5 @@
+import { GiLightBulb, GiRobotGolem, GiSpyglass } from 'react-icons/gi'; // Example icons from react-icons
 import Image from "next/image";
-
 const AboutSectionTwo = () => {
   return (
     <section className="py-16 md:py-20 lg:py-28">
@@ -28,27 +28,36 @@ const AboutSectionTwo = () => {
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-[470px]">
               <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                 Journey to Redefine Everyday Living
-                </h3>
+                <div className="flex items-center mb-4">
+                  <GiLightBulb className="text-4xl text-blue-500 mr-3" />
+                  <h3 className="text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                    Journey to Redefine Everyday Living
+                  </h3>
+                </div>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                Logicboots, founded in 2020, is on a mission to transform everyday living through innovative robotics and advanced technology.
+                  Logicboots, founded in 2020, is on a mission to transform everyday living through innovative robotics and advanced technology.
                 </p>
               </div>
               <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                Fun-infused Robotics
-                </h3>
+                <div className="flex items-center mb-4">
+                  <GiRobotGolem className="text-4xl text-green-500 mr-3" />
+                  <h3 className="text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                    Fun-infused Robotics
+                  </h3>
+                </div>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                Logicboots enhances everyday tasks by integrating robotics, aiming to add a &quot;wow&quot; factor to their products and redefine user experiences
+                  Logicboots enhances everyday tasks by integrating robotics, aiming to add a "wow" factor to their products and redefine user experiences.
                 </p>
               </div>
               <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                Institutional Support
-                </h3>
+                <div className="flex items-center mb-4">
+                  <GiSpyglass className="text-4xl text-yellow-500 mr-3" />
+                  <h3 className="text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
+                    Institutional Support
+                  </h3>
+                </div>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                Backed by TIDES at IIT Roorkee, Medtech at SGPGI Lucknow, and Electropreneur Park in Bhubaneswar and Delhi, alongside support from the Ministry of Electronics and Information Technology.
+                  Backed by TIDES at IIT Roorkee, Medtech at SGPGI Lucknow, and Electropreneur Park in Bhubaneswar and Delhi, alongside support from the Ministry of Electronics and Information Technology.
                 </p>
               </div>
             </div>
