@@ -10,7 +10,7 @@ const Hero = () => {
           className="relative z-10 h-screen overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[180px] md:pt-[180px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
         >
           <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-[650px] text-center">
+            <div className="mx-auto max-w-[680px] text-center">
               <h1 className="mb-5 mt-10 text-4xl md:text-4xl font-bold leading-tight text-black dark:text-white">
                 Building Intelligent Machines, Enriching Human Lives
               </h1>
