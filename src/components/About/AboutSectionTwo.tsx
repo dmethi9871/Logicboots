@@ -46,7 +46,7 @@ const AboutSectionTwo = () => {
                   </h3>
                 </div>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Logicboots enhances everyday tasks by integrating robotics, aiming to add a "wow" factor to their products and redefine user experiences.
+                  Logicboots enhances everyday tasks by integrating robotics, aiming to add a &quot; wow &quot; factor to their products and redefine user experiences.
                 </p>
               </div>
               <div className="mb-1">
